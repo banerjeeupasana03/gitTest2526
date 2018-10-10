@@ -1,0 +1,214 @@
+ 2018-10-10 15:42:45 ⌚  |2.4.0| developer in ~
+○ → cd ~/Desktop/
+
+ 2018-10-10 15:47:10 ⌚  |2.4.0| developer in ~/Desktop
+○ → mkdir -p Test2
+
+ 2018-10-10 15:47:23 ⌚  |2.4.0| developer in ~/Desktop
+○ → touch ~/Desktop/Test2/command.txt
+
+ 2018-10-10 15:47:59 ⌚  |2.4.0| developer in ~/Desktop
+○ → pwd
+/Users/developer/Desktop
+
+ 2018-10-10 15:49:44 ⌚  |2.4.0| developer in ~/Desktop
+○ → git clone git@github.com:banerjeeupasana03/gitTest2526.git
+Cloning into 'gitTest2526'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ 2018-10-10 15:50:13 ⌚  |2.4.0| developer in ~/Desktop
+○ → mv -r ~/Desktop/Test2/ ~/Desktop/gitTest2526/
+mv: invalid option -- 'r'
+Try 'mv --help' for more information.
+
+ 2018-10-10 15:51:44 ⌚  |2.4.0| developer in ~/Desktop
+○ → mv  ~/Desktop/Test2/ ~/Desktop/gitTest2526/
+
+ 2018-10-10 15:52:01 ⌚  |2.4.0| developer in ~/Desktop
+○ → cd gitTest2526/
+
+ 2018-10-10 15:53:41 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	Test2/
+
+nothing added to commit but untracked files present
+
+ 2018-10-10 15:53:47 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → git add .
+
+ 2018-10-10 15:53:51 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master S:1 ✗| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+	new file:   Test2/command.txt
+
+
+ 2018-10-10 15:53:55 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master S:1 ✗| → git commit -m "first commit moving Test 2 inside repository"
+[master 9692478] first commit moving Test 2 inside repository
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test2/command.txt
+
+ 2018-10-10 15:54:23 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ↑1 ✓| → git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 15:54:26 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ↑1 ✓| → git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 357 bytes | 357.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+giTo github.com:banerjeeupasana03/gitTest2526.git
+   ea201c4..9692478  master -> master
+t s
+ 2018-10-10 15:54:38 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 15:54:40 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 15:55:09 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 15:55:30 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → pwd
+/Users/developer/Desktop/gitTest2526
+
+ 2018-10-10 15:56:14 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → touch repo.txt
+
+ 2018-10-10 15:56:37 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → git remote -v | head -n 1 >> repo.txt
+
+ 2018-10-10 15:59:28 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	repo.txt
+
+nothing added to commit but untracked files present
+
+ 2018-10-10 15:59:55 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → git add .
+
+ 2018-10-10 16:00:01 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master S:1 ✗| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+	new file:   repo.txt
+
+
+ 2018-10-10 16:00:06 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master S:1 ✗| → git commit -m "added repository link in repo file"
+[master 64a0e82] added repository link in repo file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 repo.txt
+
+ 2018-10-10 16:00:30 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ↑1 ✓| → git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 16:00:35 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ↑1 ✓| → git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:banerjeeupasana03/gitTest2526.git
+   9692478..64a0e82  master -> master
+
+ 2018-10-10 16:00:49 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 16:00:53 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → nano repo.txt
+
+ 2018-10-10 16:02:40 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → touch index.html
+
+ 2018-10-10 16:03:01 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → nano index.html
+
+ 2018-10-10 16:03:47 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	index.html
+
+nothing added to commit but untracked files present
+
+ 2018-10-10 16:03:59 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ?:1 ✗| → git add .
+
+ 2018-10-10 16:04:03 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master S:1 ✗| → git commit -m "added index html file"
+[master 14a0939] added index html file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.html
+
+ 2018-10-10 16:04:41 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ↑1 ✓| → git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 16:04:44 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ↑1 ✓| → git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 380 bytes | 380.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+git statTo github.com:banerjeeupasana03/gitTest2526.git
+   64a0e82..14a0939  master -> master
+t
+ 2018-10-10 16:04:59 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| → git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ 2018-10-10 16:05:03 ⌚  |2.4.0| developer in ~/Desktop/gitTest2526
+± |master ✓| →
